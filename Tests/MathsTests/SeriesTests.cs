@@ -19,25 +19,58 @@ namespace MathsTests
         [Fact]
         public void Check_First_Item_In_Series()
         {
-            throw new NotImplementedException();
+            //Arrange
+            int[] testData = { 1, 2, 3, 4, 5 };
+            Series<int> series = new Series<int>(testData);
+
+            //Act
+            int firstItem = series.FirstItem;
+
+            //Assert
+            Assert.Equal(1, firstItem);
+
         }
 
         [Fact]
         public void Check_Last_Item_In_Series()
         {
-            throw new NotImplementedException();
+            //Arrange
+            int[] testData = { 1, 2, 3, 4, 5 };
+            Series<int> series = new Series<int>(testData);
+
+            //Act
+            int lastItem = series.LastItem;
+
+            //Assert
+            Assert.Equal(5, lastItem);
         }
 
         [Fact]
         public void Check_Count()
         {
-            throw new NotImplementedException();
+            //Arrange
+            int[] testData = { 1, 2, 3, 4, 5 };
+            Series<int> series = new Series<int>(testData);
+
+            //Act
+            int count = series.Count;
+
+            //Assert
+            Assert.Equal(5, count);
         }
 
         [Fact]
         public void Check_ToString()
         {
-            throw new NotImplementedException();
+            //Arrange
+            int[] testData = { 1, 2, 3, 4, 5 };
+            Series<int> series = new Series<int>(testData);
+
+            //Act
+            var result = series.ToString();
+
+            //Assert
+            Assert.Equal("12345", result);
         }
 
         [Fact]
@@ -48,7 +81,7 @@ namespace MathsTests
             var seriesB = new Series<int>(new int[] { 1, 2, 3 });
 
             // Act
-            var result = seriesA.Equals(seriesB);
+            var result = seriesA.MyEquals(seriesB);
 
             // Assert
             Assert.True(result);
