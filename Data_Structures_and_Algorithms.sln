@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{A65005EA-8606-44A4-AE13-3E83FC486B14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{0BAEB849-FC0B-4ED5-884E-01DE3449FE94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{01E7C875-E881-404C-89A0-F9B58052F100}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BDE52034-DC0F-45D0-B2AF-C9C33F127D1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maths", "Maths", "{E3A7390B-099A-4171-949C-AB2AA71B0451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maths", "Liabraries\Maths\Maths\Maths.csproj", "{010861CA-0A4D-43AC-9036-82E91B0D34E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathsTests", "Tests\MathsTests\MathsTests.csproj", "{9717572A-B64B-4C53-8542-5E25EF38C823}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{010861CA-0A4D-43AC-9036-82E91B0D34E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010861CA-0A4D-43AC-9036-82E91B0D34E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010861CA-0A4D-43AC-9036-82E91B0D34E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010861CA-0A4D-43AC-9036-82E91B0D34E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9717572A-B64B-4C53-8542-5E25EF38C823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9717572A-B64B-4C53-8542-5E25EF38C823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9717572A-B64B-4C53-8542-5E25EF38C823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9717572A-B64B-4C53-8542-5E25EF38C823}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3A7390B-099A-4171-949C-AB2AA71B0451} = {01E7C875-E881-404C-89A0-F9B58052F100}
+		{010861CA-0A4D-43AC-9036-82E91B0D34E7} = {E3A7390B-099A-4171-949C-AB2AA71B0451}
+		{9717572A-B64B-4C53-8542-5E25EF38C823} = {BDE52034-DC0F-45D0-B2AF-C9C33F127D1A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CD18C08-D1CD-4B82-B862-1F1812B3118C}
+	EndGlobalSection
+EndGlobal
