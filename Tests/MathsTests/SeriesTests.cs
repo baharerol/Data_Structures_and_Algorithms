@@ -14,46 +14,41 @@ namespace MathsTests
         public SeriesTests()
         {
             // Arrange
+            _series = new Series<char>("hello".ToCharArray());
         }
 
         [Fact]
         public void Check_First_Item_In_Series()
         {
-            //Arrange
-            int[] testData = { 1, 2, 3, 4, 5 };
-            Series<int> series = new Series<int>(testData);
+            // Act
+            if (_series.Count == 0)
+                Assert.Throws<InvalidOperationException>(() => _series.FirstItem);
 
-            //Act
-            int firstItem = series.FirstItem;
+            var result = _series.FirstItem;
 
-            //Assert
-            Assert.Equal(1, firstItem);
+            // Asserts
+            Assert.Equal('h', result);
 
         }
 
         [Fact]
         public void Check_Last_Item_In_Series()
         {
-            //Arrange
-            int[] testData = { 1, 2, 3, 4, 5 };
-            Series<int> series = new Series<int>(testData);
+            // Act
+            if (_series.Count == 0)
+                Assert.Throws<InvalidOperationException>(() => _series.LastItem);
 
-            //Act
-            int lastItem = series.LastItem;
+            var result = _series.LastItem;
 
-            //Assert
-            Assert.Equal(5, lastItem);
+            // Asserts
+            Assert.Equal('o', result);
         }
 
         [Fact]
         public void Check_Count()
         {
-            //Arrange
-            int[] testData = { 1, 2, 3, 4, 5 };
-            Series<int> series = new Series<int>(testData);
-
             //Act
-            int count = series.Count;
+            int count = _series.Count;
 
             //Assert
             Assert.Equal(5, count);
@@ -62,15 +57,11 @@ namespace MathsTests
         [Fact]
         public void Check_ToString()
         {
-            //Arrange
-            int[] testData = { 1, 2, 3, 4, 5 };
-            Series<int> series = new Series<int>(testData);
-
             //Act
-            var result = series.ToString();
+            var result = _series.ToString();
 
             //Assert
-            Assert.Equal("12345", result);
+            Assert.Equal("hello", result);
         }
 
         [Fact]
