@@ -11,7 +11,7 @@ namespace MathsTests
     public class NumberTests
     {
         [Fact]
-        public void Check_Multiply()
+        public void Check_Multiply_With_NoParameter()
         {
             // Arrange
             var number = new Number(5);
@@ -31,39 +31,47 @@ namespace MathsTests
             var number = new Number(10);
 
             // Act
-            var result = number.Value;
+            var result = number.Multiply(2);
 
             // Assert 
-            Assert.True(true);
-            Assert.False(false);
-            Assert.Equal(5, 10);
-        }
-
-        [Fact]
-        public void Check_Multiply_With_NoParameter()
-        {
-            throw new NotImplementedException();
+            Assert.Equal(20, result);
         }
 
 
         [Fact]
         public void Check_Number_MinValue()
         {
-            throw new NotImplementedException();
+            //Arrange
+            var number = new Number();
+
+            //Assert
+            Assert.Equal(int.MinValue, number.MinValue);
+
         }
 
 
         [Fact]
         public void Check_Number_MaxValue()
         {
-            throw new NotImplementedException();
+            //Arrange
+            var number = new Number();
+
+            //Assert
+            Assert.Equal(int.MaxValue, number.MaxValue);
         }
 
 
         [Fact]
         public void Check_ToString()
         {
-            throw new NotImplementedException();
+            // Arrange
+            var number = new Number(5);
+
+            // Act
+            var result = number.ToString();
+
+            // Assert
+            Assert.Equal("5", result);
         }
     }
 }
