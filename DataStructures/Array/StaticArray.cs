@@ -14,6 +14,7 @@ namespace Array
         public StaticArray()
         {
             _innerArray = new T[4];
+            
         }
 
         public StaticArray(IEnumerable<T> collection)
