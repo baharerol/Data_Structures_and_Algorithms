@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Applications\Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayTests", "Tests\ArrayTests\ArrayTests.csproj", "{2B324BB6-C43F-4DA4-B141-CE5DDC0352FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "DataStructures\LinkedList\LinkedList.csproj", "{7A581D11-A57A-4190-B18C-AFCD8871BE0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{2B324BB6-C43F-4DA4-B141-CE5DDC0352FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B324BB6-C43F-4DA4-B141-CE5DDC0352FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B324BB6-C43F-4DA4-B141-CE5DDC0352FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A581D11-A57A-4190-B18C-AFCD8871BE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A581D11-A57A-4190-B18C-AFCD8871BE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A581D11-A57A-4190-B18C-AFCD8871BE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A581D11-A57A-4190-B18C-AFCD8871BE0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{9D226E83-EEAE-4987-994C-4846290DAA81} = {0BAEB849-FC0B-4ED5-884E-01DE3449FE94}
 		{DFE12A2B-1632-4EE6-8D37-14A4BA37A725} = {A65005EA-8606-44A4-AE13-3E83FC486B14}
 		{2B324BB6-C43F-4DA4-B141-CE5DDC0352FA} = {BDE52034-DC0F-45D0-B2AF-C9C33F127D1A}
+		{7A581D11-A57A-4190-B18C-AFCD8871BE0A} = {0BAEB849-FC0B-4ED5-884E-01DE3449FE94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CD18C08-D1CD-4B82-B862-1F1812B3118C}
