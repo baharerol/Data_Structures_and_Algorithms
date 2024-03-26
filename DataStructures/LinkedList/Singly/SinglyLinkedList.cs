@@ -14,6 +14,8 @@ namespace LinkedList.Singly
 
         public int Count => _count;
 
+        public bool IsEmpty => Head == null;
+
         public SinglyLinkedList()
         {
 
