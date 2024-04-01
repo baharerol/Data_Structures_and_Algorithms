@@ -20,10 +20,10 @@ public class ArrayApplications
 
         for (int i = 0; i < numbers.Length; i++)
         {
-            Console.WriteLine(numbers.GetItem(i));
+            System.Console.WriteLine(numbers.GetItem(i));
         }
 
-        Console.WriteLine($"Number of items in array: {numbers.Count}");
+        System.Console.WriteLine($"Number of items in array: {numbers.Count}");
     }
 
     public static void StaticArraySample()
@@ -41,6 +41,6 @@ public class ArrayApplications
             System.Console.WriteLine(names.GetItem(i));
         }
 
-        Console.ReadLine();
+        System.Console.ReadLine();
     }
 }
