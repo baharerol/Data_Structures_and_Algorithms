@@ -1,5 +1,6 @@
 ﻿using LinkedList.Contracts;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList.Singly
 {
-    public class SinglyLinkedList<T> : ISinglyLinkedList<T>
+    public class SinglyLinkedList<T> : ISinglyLinkedList<T>, IEnumerable<T>
     {
         private int _count;
         public SinglyLinkedListNode<T>? Head { get; set; }
@@ -199,6 +200,16 @@ namespace LinkedList.Singly
             }
 
             throw new Exception();
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            return new SinglyLinkedListEnumerator<T>(Head);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }
