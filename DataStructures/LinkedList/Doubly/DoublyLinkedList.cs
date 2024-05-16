@@ -37,7 +37,7 @@ namespace LinkedList.Doubly
                 Head = node;
                 Tail = node; // Tail = Head;
                 isHeadNull = false;
-                return; // Added! İşlem yapıldıktan sonra return ile kesilmelidir. 
+                return;  
             }
 
             Head.Prev = node;
@@ -53,7 +53,7 @@ namespace LinkedList.Doubly
                 Head = node;
                 Tail = node; // Tail = Head;
                 isHeadNull = false;
-                return; // Added! İşlem yapıldıktan sonra return ile kesilmelidir.
+                return; 
             }
 
             Tail.Next = node;
@@ -86,6 +86,14 @@ namespace LinkedList.Doubly
         {
             if (isHeadNull)
                 throw new Exception("The linked list is empty!");
+
+            if (Head.Equals(Tail))
+            {
+                T item2 = Head.Value;
+                Head = null;
+                Tail = null;
+                return item2;
+            }
 
             T item = Tail.Value;
             Tail = Tail.Prev;

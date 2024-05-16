@@ -25,7 +25,7 @@ namespace LinkedList.Doubly
             Curr = null;
         }
 
-        public T Current => Curr.Value ?? default(T);
+        public T Current => Curr != null ? Curr.Value : default(T);
 
         object IEnumerator.Current => Current;
 
@@ -57,10 +57,8 @@ namespace LinkedList.Doubly
 
         public void Reset()
         {
-            Head = null;
-            Tail = null;
             Curr = null;
         }
     }
 }
-}
+
