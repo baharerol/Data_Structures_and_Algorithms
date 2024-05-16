@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Applications\Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayTests", "Tests\ArrayTests\ArrayTests.csproj", "{2B324BB6-C43F-4DA4-B141-CE5DDC0352FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "DataStructures\LinkedList\LinkedList.csproj", "{7A581D11-A57A-4190-B18C-AFCD8871BE0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "DataStructures\LinkedList\LinkedList.csproj", "{7A581D11-A57A-4190-B18C-AFCD8871BE0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListTests", "Tests\LinkedListTests\LinkedListTests.csproj", "{6B68BD3B-8FB0-45F8-853B-FDD296B42A94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListTests", "Tests\LinkedListTests\LinkedListTests.csproj", "{6B68BD3B-8FB0-45F8-853B-FDD296B42A94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "DataStructures\Stack\Stack.csproj", "{1B6FB9E6-AF64-493A-890E-0F258BEE74D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{6B68BD3B-8FB0-45F8-853B-FDD296B42A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B68BD3B-8FB0-45F8-853B-FDD296B42A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B68BD3B-8FB0-45F8-853B-FDD296B42A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B6FB9E6-AF64-493A-890E-0F258BEE74D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6FB9E6-AF64-493A-890E-0F258BEE74D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6FB9E6-AF64-493A-890E-0F258BEE74D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6FB9E6-AF64-493A-890E-0F258BEE74D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{2B324BB6-C43F-4DA4-B141-CE5DDC0352FA} = {BDE52034-DC0F-45D0-B2AF-C9C33F127D1A}
 		{7A581D11-A57A-4190-B18C-AFCD8871BE0A} = {0BAEB849-FC0B-4ED5-884E-01DE3449FE94}
 		{6B68BD3B-8FB0-45F8-853B-FDD296B42A94} = {BDE52034-DC0F-45D0-B2AF-C9C33F127D1A}
+		{1B6FB9E6-AF64-493A-890E-0F258BEE74D3} = {0BAEB849-FC0B-4ED5-884E-01DE3449FE94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CD18C08-D1CD-4B82-B862-1F1812B3118C}
